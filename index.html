@@ -19,422 +19,245 @@
 
 </head>
 
-<body class="container-fluid bg-primary p-5">
-    <h1 id="title" class="text-light text-center mb-5">Situación Actual de los<br>Emprendedores de Traslasierra</h1>
-    <div id="intro" class="text-light text-justify">
-        <p class="texto">Cómo estás?</p>
-        <p class="texto">Te invitamos a responder las siguientes 10 preguntas acerca de la situación actual de los
-            emprendedores en Traslasierra. Ya mismo agradecemos tu apoyo e interés.</p>
-        <p class="texto">No te tomará nada de tiempo hacerlo y tus respuesta serán un valiosísimo aporte para
-            delinear el ecosistema productivo de Nuestro Valle.</p>
-        <p class="texto">Tu participación es 100% voluntaria y anónima. Te pedimos que contestes con sinceridad, ya que
-            el mayor beneficiario de este cuestionario sos VOS.</p>
-        <p class="texto"> Esta encuesta se enmarca en el N.E.T. (Networking de Emprendedores de Traslasierra)</p>
+<body>
+    <div class="container" style>
+        <h1 id="title" class="text-light text-center mb-5 p-3 display-4 text-dark">Situación Actual de los<br>Emprendedores de
+            Traslasierra</h1>
+        <div id="intro" class="section text-dark text-justify p-3 h4">
+            <p class="texto">Cómo estás?</p>
+            <p class="texto">Te invitamos a responder las siguientes 10 preguntas acerca de la situación actual de los
+                emprendedores en Traslasierra. Ya mismo agradecemos tu apoyo e interés.</p>
+            <p class="texto">No te tomará nada de tiempo hacerlo y tus respuesta serán un valiosísimo aporte para
+                delinear el ecosistema productivo de Nuestro Valle.</p>
+            <p class="texto">Tu participación es 100% voluntaria y anónima. Te pedimos que contestes con sinceridad, ya
+                que
+                el mayor beneficiario de este cuestionario sos VOS.</p>
+            <p class="texto"> Esta encuesta se enmarca en el N.E.T. (Networking de Emprendedores de Traslasierra)</p>
+        </div>
+
+        <form id="survey-form" class="mt-5 text-dark p-3">
+
+            <div class="dupla-consigna bg-light my-3 row py-2">
+                <div class="pregunta text-right col-6">
+                    <label for="nombre" id="name-label">Nombre (opcional)</label>
+                </div>
+                <div class="respuesta text-left col-6">
+                    <input type="text" name="nombre" id="name" placeholder="Tu nombre..." required>
+                </div>
+            </div>
+
+            <div class="dupla-consigna bg-light my-3 row py-2">
+                <div class="pregunta text-right col-6">
+                    <label for="email" id="email-label">Correo (opcional)</label>
+                </div>
+                <div class="respuesta text-left col-6">
+                    <input type="email" name="email" id="email" placeholder="Tu correo..." required>
+                </div>
+            </div>
+
+            <div class="dupla-consigna bg-light my-3 row py-2">
+                <div class="pregunta text-right col-6">
+                    <label for="number" id="number-label">Teléfono (opcional)</label>
+                </div>
+                <div class="respuesta text-left col-6">
+                    <input type="number" name="number" id="number" placeholder="Nº sin (0) ni 15-" min="1"
+                        max="9999999999" required>
+                </div>
+            </div>
+
+            <div class="dupla-consigna bg-light my-3 row py-2">
+                <div class="pregunta text-right col-6">
+                    <label for="actividad">¿A qué actividad(es) te dedicás? (podés marcar más de un grupo)</label>
+                </div>
+                <ul class="respuesta text-left col-6">
+                    <input type="checkbox" name="actividad" value="comerciante">Comercialización de productos físicos no
+                    manufacturados por mí/nosotros (reventa de ropa, etc.)
+                    <br>
+                    <input type="checkbox" name="actividad" value="fabricante">Comercialización de productos físicos que
+                    elaborados por mí/nosotros (artesanías, comidas, etc.)
+                    <br>
+                    <input type="checkbox" name="actividad" value="agricultor">Producción/Comercialización agropecuaria
+                    (granja, emprendimiento de verduras orgánicas, etc.)
+                    <br>
+                    <input type="checkbox" name="actividad" value="servicios">Comercialización de Servicios no digitales
+                    (jardinería, masajes, clases particulares, etc.)
+                    <br>
+                    <input type="checkbox" name="actividad" value="digitales">Comercialización de Servicios digitales
+                    (desarrollo web, programación, etc.)
+                    <br>
+                    <input type="checkbox" name="actividad" value="otra">Otra
+                    <br>
+                </ul>
+            </div>
+
+            <div class="dupla-consigna bg-light my-3 row py-2">
+                <div class="pregunta text-right col-6">
+                    <label for="familiaridad">Familiaridad Disciplinar. Qué tan al tanto estás de la cultura del
+                        Emprendedorismo? Qué nivel de familiaridad tenés respecto de los siguientes significados:
+                        (ninguno,
+                        bajo, suficiente, moderado, alto)?</label>
+                </div>
+                <ul class="respuesta text-left col-6">
+                    <input type="radio" name="familiaridad" value="startup">Startup (o Empresa Semilla)
+                    <br>
+                    <input type="radio" name="familiaridad" value="networking">Trabajo en Redes (o Networking)
+                    <br>
+                    <input type="radio" name="familiaridad" value="crowdfunding">Financiamiento colectivo (Crowdfunding)
+                    <br>
+                    <input type="radio" name="familiaridad" value="bussiness-model">Modelo de negocio
+                    <br>
+                    <input type="radio" name="familiaridad" value="mentoring">Mentoría (Mentoring)
+                    <br>
+                    <input type="radio" name="familiaridad" value="incubadora">Aceleradora o Incubadora de
+                    Emprendimientos
+                    <br>
+                </ul>
+            </div>
+
+            <div class="dupla-consigna bg-light my-3 row py-2">
+                <div class="pregunta text-right col-6">
+                    <label for="situac-laboral">¿Qué ítem describe mejor tu situación laboral?</label>
+                </div>
+                <ul class="respuesta text-left col-6">
+                    <input type="radio" name="situac-laboral" value="unico-pers">Único ingreso en emprendimiento
+                    PERSONAL
+                    <br>
+                    <input type="radio" name="situac-laboral" value="varios-pers">Más de un ingreso: emprendimiento
+                    PERSONAL y
+                    empleo/s
+                    <br>
+                    <input type="radio" name="situac-laboral" value="unico-fam">Único ingreso en emprendimiento FAMILIAR
+                    <br>
+                    <input type="radio" name="situac-laboral" value="varios-fam">Más de un ingreso: emprendimiento
+                    FAMILIAR y
+                    empleo/s
+                    <br>
+                    <input type="radio" name="situac-laboral" value="unico-dep">Único ingreso: empleo
+                    <br>
+                    <input type="radio" name="situac-laboral" value="varios-dep">Más de un ingreso provinientes de
+                    empleos
+                    <br>
+                    <input type="radio" name="situac-laboral" value="otro">Otro...
+                    <br>
+                </ul>
+            </div>
+
+            <div class="dupla-consigna bg-light my-3 row py-2">
+                <div class="pregunta text-right col-6">
+                    <label for="edad">Edad</label>
+                </div>
+                <div class="respuesta text-left col-6">
+                    <select id="dropdown" name="edad" class="dropdown">
+                        <option disabled value>Selecioná una opción</option>
+                        <option value="hasta-veinticuatro">24 o menos</option>
+                        <option value="veinticinco-treintaydos">25-32</option>
+                        <option value="treintaytres-cuarentaydos">33-42</option>
+                        <option value="cuarentaytres-cincuentaydos">43-52</option>
+                        <option value="desde-cincuentaytres">53 o más</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="dupla-consigna bg-light my-3 row py-2">
+                <div class="pregunta text-right col-6">
+                    <label for="recursos">¿Cuánto aplicás las siguientes técnicas o recursos en el día a día de tu
+                        emprendimiento?</label>
+                </div>
+                <ul class="respuesta text-left col-6">
+                    <input type="radio" name="recursos" value="bussiness-plan">Plan de Negocio General
+                    <br>
+                    <input type="radio" name="recursos" value="cashflow">Planilla de Flujo de Caja
+                    <br>
+                    <input type="radio" name="recursos" value="presupuesto">Proyección de Presupuesto
+
+                    <br>
+                    <input type="radio" name="recursos" value="ahorro">Ahorro con fines varios
+
+                    <br>
+                    <input type="radio" name="recursos" value="capacitaciones">Capacitación Permanente
+
+                    <br>
+                    <input type="radio" name="recursos" value="outsourcing">Delegación, automatización o Tercerización
+                    <br>
+                </ul>
+            </div>
+
+            <div class="dupla-consigna bg-light my-3 row py-2">
+                <div class="pregunta text-right col-6">
+                    <label for="financiamiento">Has pedido dinero prestado en los últimos 12 meses?</label>
+                </div>
+                <ul class="respuesta text-left col-6">
+                    <input type="radio" name="financiamiento" value="no">No.
+                    <br>
+                    <input type="radio" name="financiamiento" value="conocido">Sí, a mi pareja, a un amigo, a un
+                    familiar
+                    <br>
+                    <input type="radio" name="financiamiento" value="privado">Sí, a un organismo privado (bancos,
+                    financieras)
+                    <br>
+                    <input type="radio" name="financiamiento" value="publico">Sí a un organismo público (asistencia a
+                    emprendedores,
+                    no asignaciones)
+                    <br>
+                </ul>
+            </div>
+
+            <div class="dupla-consigna bg-light my-3 row py-2">
+                <div class="pregunta text-right col-6">
+                    <label for="nec-capital">¿Nos detallás algo sobre las necesidades de capital que encontrás en tu
+                        emprendimiento y su prioridad? (baja necesidad, intermedia, alta)
+                    </label>
+                </div>
+                <ul class="respuesta text-left col-6">
+                    <input type="radio" name="nec-capital" value="herram">Herramientas, maquinaria, vehículos…
+
+                    <br>
+                    <input type="radio" name="nec-capital" value="materia-prim">Materia prima, proveedores idóneos…
+
+                    <br>
+                    <input type="radio" name="nec-capital" value="personal">Capital humano, colaboradores…
+
+                    <br>
+                    <input type="radio" name="nec-capital" value="publicidad">Difusión de mi actividad, promoción…
+
+                    <br>
+                    <input type="radio" name="nec-capital" value="capacitacion">Capacitación mía o de colaboradores…
+
+                    <br>
+                    <input type="radio" name="nec-capital" value="deudas">Pago de deudas…
+
+                    <br>
+                </ul>
+            </div>
+            
+            <div class="dupla-consigna bg-light my-3 row py-2">
+                <p id="description" class="pregunta text-right col text-dark text-justify">Finalmente: Juntos, estamos
+                    formando un ecosistema dinámico de emprendedores en nuestro Valle. ¿Qué esperarías encontrar en el
+                    mismo? (Propuestas, beneficios, información, apalancamiento, colaboración, capacitación, etc.) Por
+                    favor, detallanos cualquier cosa que se te ocurra, lo primero que se te venga a la mente... que
+                    siempre
+                    es lo más profundo y sincero. Gracias por tu valioso tiempo. Mantengámonos conectados!</p>
+                <textarea class="col mr-2" name="" value="" cols="30" rows="10"></textarea>
+
+            </div>
+
+            <button type="submit" class="btn btn-block btn-light text-dark" id="submit">
+                Enviar Encuesta
+            </button>
+
+        </form>
     </div>
-
-    <form id="survey-form" class="mt-5 text-dark">
-
-        <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="nombre" id="name-label">Nombre (opcional)</label>
-            </div>
-            <div class="respuesta text-left col-6">
-                <input type="text" name="nombre" id="name" placeholder="Tu nombre..." required>
-            </div>
-        </div>
-
-        <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="email" id="email-label">Correo (opcional)</label>
-            </div>
-            <div class="respuesta text-left col-6">
-                <input type="email" name="email" id="email" placeholder="Tu correo..." required>
-            </div>
-        </div>
-
-        <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="number" id="number-label">Teléfono (opcional)</label>
-            </div>
-            <div class="respuesta text-left col-6">
-                <input type="number" name="number" id="number" placeholder="Nº sin (0) ni 15-" min="1" max="9999999999"
-                    required>
-            </div>
-        </div>
-
-        <div class="dupla-consigna bg-light my-3 row">
-            <div class="pregunta text-right col-6">
-                <label for="actividad">¿A qué actividad(es) te dedicás? (podés marcar más de un grupo)</label>
-            </div>
-            <ul class="respuesta text-left col-6">
-                <input type="checkbox" name="actividad" value="comerciante">Comercialización de productos físicos no
-                manufacturados por mí/nosotros (reventa de ropa, etc.)
-                <br>
-                <input type="checkbox" name="actividad" value="fabricante">Comercialización de productos físicos que
-                elaborados por mí/nosotros (artesanías, comidas, etc.)
-                <br>
-                <input type="checkbox" name="actividad" value="agricultor">Producción/Comercialización agropecuaria
-                (granja, emprendimiento de verduras orgánicas, etc.)
-                <br>
-                <input type="checkbox" name="actividad" value="servicios">Comercialización de Servicios no digitales
-                (jardinería, masajes, clases particulares, etc.)
-                <br>
-                <input type="checkbox" name="actividad" value="digitales">Comercialización de Servicios digitales
-                (desarrollo web, programación, etc.)
-                <br>
-                <input type="checkbox" name="actividad" value="otra">Otra
-                <br>
-            </ul>
-        </div>
-
-        <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="familiaridad">Familiaridad Disciplinar. Qué tan al tanto estás de la cultura del
-                    Emprendedorismo? Qué nivel de familiaridad tenés respecto de los siguientes significados: (ninguno,
-                    bajo, suficiente, moderado, alto)?</label>
-            </div>
-            <ul class="respuesta text-left col-6">
-                <input type="radio" name="familiaridad" value="startup">Startup (o Empresa Semilla)
-                <br>
-                <input type="radio" name="familiaridad" value="networking">Trabajo en Redes (o Networking)
-                <br>
-                <input type="radio" name="familiaridad" value="crowdfunding">Financiamiento colectivo (Crowdfunding)
-                <br>
-                <input type="radio" name="familiaridad" value="bussiness-model">Modelo de negocio
-                <br>
-                <input type="radio" name="familiaridad" value="mentoring">Mentoría (Mentoring)
-                <br>
-                <input type="radio" name="familiaridad" value="incubadora">Aceleradora o Incubadora de Emprendimientos
-                <br>
-            </ul>
-        </div>
-
-        <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="situac-laboral">¿Qué ítem describe mejor tu situación laboral?</label>
-            </div>
-            <ul class="respuesta text-left col-6">
-                <input type="radio" name="situac-laboral" value="unico-pers">Único ingreso en emprendimiento PERSONAL
-                <br>
-                <input type="radio" name="situac-laboral" value="varios-pers">Más de un ingreso: emprendimiento PERSONAL y
-                empleo/s
-                <br>
-                <input type="radio" name="situac-laboral" value="unico-fam">Único ingreso en emprendimiento FAMILIAR
-                <br>
-                <input type="radio" name="situac-laboral" value="varios-fam">Más de un ingreso: emprendimiento FAMILIAR y
-                empleo/s
-                <br>
-                <input type="radio" name="situac-laboral" value="unico-dep">Único ingreso: empleo
-                <br>
-                <input type="radio" name="situac-laboral" value="varios-dep">Más de un ingreso provinientes de empleos
-                <br>
-                <input type="radio" name="situac-laboral" value="otro">Otro...
-                <br>
-            </ul>
-        </div>
-
-        <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="edad">Edad</label>
-            </div>
-            <div class="respuesta text-left col-6">
-                <select id="dropdown" name="edad" class="dropdown">
-                    <option disabled value>Selecioná una opción</option>
-                    <option value="hasta-veinticuatro">24 o menos</option>
-                    <option value="veinticinco-treintaydos">25-32</option>
-                    <option value="treintaytres-cuarentaydos">33-42</option>
-                    <option value="cuarentaytres-cincuentaydos">43-52</option>
-                    <option value="desde-cincuentaytres">53 o más</option>
-                </select>
-            </div>
-        </div>
-
-        <!-- <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="recursos">Qué tan al tanto estás de los recursos de asistencia al emprendedor que ofrecen los organismos públicos? Has obtenido asistencia en alguno de ellos?</label>
-            </div>
-            <ul class="respuesta text-left col-6">
-                <input type="radio" name="recursos" value="">
-                <br>
-                <input type="radio" name="recursos" value="">
-                <br>
-                <input type="radio" name="recursos" value="">
-                <br>
-                <input type="radio" name="recursos" value="">
-                <br>
-                <input type="radio" name="recursos" value="">
-                <br>
-            </ul>
-        </div> -->
-
-        <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="recursos">¿Cuánto aplicás las siguientes técnicas o recursos en el día a día de tu
-                    emprendimiento?</label>
-            </div>
-            <ul class="respuesta text-left col-6">
-                <input type="radio" name="recursos" value="bussiness-plan">Plan de Negocio General
-                <br>
-                <input type="radio" name="recursos" value="cashflow">Planilla de Flujo de Caja
-                <br>
-                <input type="radio" name="recursos" value="presupuesto">Proyección de Presupuesto
-
-                <br>
-                <input type="radio" name="recursos" value="ahorro">Ahorro con fines varios
-
-                <br>
-                <input type="radio" name="recursos" value="capacitaciones">Capacitación Permanente
-
-                <br>
-                <input type="radio" name="recursos" value="outsourcing">Delegación, automatización o Tercerización
-                <br>
-            </ul>
-        </div>
-
-        <!-- <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="familiaridad">Qué canales utilizas?</label>
-            </div>
-            <ul class="respuesta text-left col-6">
-                <input type="radio" name="familiaridad" value="">
-                <br>
-                <input type="radio" name="familiaridad" value="">
-                <br>
-                <input type="radio" name="familiaridad" value="">
-                <br>
-                <input type="radio" name="familiaridad" value="">
-                <br>
-                <input type="radio" name="familiaridad" value="">
-                <br>
-            </ul>
-        </div> -->
-
-        <!-- <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="familiaridad">Hace cuánto que tomaste la última capacitación para realizar tu actividad? (nunca, más de un año, 6-12 meses, menos de 6 meses)</label>
-            </div>
-            <ul class="respuesta text-left col-6">
-                <input type="radio" name="familiaridad" value="">Desarrollo de Producto/Servicio
-
-                <br>
-                <input type="radio" name="familiaridad" value="">Gestión, Administración
-
-                <br>
-                <input type="radio" name="familiaridad" value="">Ventas, Marketing
-
-                <br>
-                <input type="radio" name="familiaridad" value="">Comunicación, Recursos Humanos
-
-                <br>
-                <input type="radio" name="familiaridad" value="">Finanzas, Inversiones
-                <br>
-            </ul> -->
-        </div>
-
-        <!-- <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="familiaridad">Pagarías para capacitarte?</label>
-            </div>
-            <ul class="respuesta text-left col-6">
-                <inputradio" name="familiaridad" value="">
-                    <br>
-                    <input type="radio" name="familiaridad" value="">
-                    <br>
-                    <input type="radio" name="familiaridad" value="">
-                    <br>
-                    <input type="radio" name="familiaridad" value="">
-                    <br>
-                    <input type="radio" name="familiaridad" value="">
-                    <br>
-                    <input type="radio" name="familiaridad" value="">
-                    <br>
-            </ul>
-        </div> -->
-
-        <!-- <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="familiaridad">Crees que es tarea de los organismos públicos capacitar gratis a los
-                    emprendedores?</label>
-            </div>
-            <ul class="respuesta text-left col-6">
-                <inputradio" name="familiaridad" value="">
-                    <br>
-                    <input type="radio" name="familiaridad" value="">
-                    <br>
-                    <input type="radio" name="familiaridad" value="">
-                    <br>
-                    <input type="radio" name="familiaridad" value="">
-                    <br>
-                    <input type="radio" name="familiaridad" value="">
-                    <br>
-                    <input type="radio" name="familiaridad" value="">
-                    <br>
-            </ul>
-        </div> -->
-
-        <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="financiamiento">Has pedido dinero prestado en los últimos 12 meses?</label>
-            </div>
-            <ul class="respuesta text-left col-6">
-                <input type="radio" name="financiamiento" value="no">No.
-                <br>
-                <input type="radio" name="financiamiento" value="conocido">Sí, a mi pareja, a un amigo, a un familiar
-                <br>
-                <input type="radio" name="financiamiento" value="privado">Sí, a un organismo privado (bancos,
-                financieras)
-                <br>
-                <input type="radio" name="financiamiento" value="publico">Sí a un organismo público (asistencia a
-                emprendedores,
-                no asignaciones)
-                <br>
-            </ul>
-        </div>
-
-        <!-- <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="situac-laboral-b">Lo que mejor describe su situación laboral?</label>
-            </div>
-            <ul class="respuesta text-left col-6">
-                <input type="radio" name="situac-laboral-b" value="">Empleado de tiempo completo
-
-                <br>
-                <input type="radio" name="situac-laboral-b" value="">Empleado a tiempo parcial
-
-                <br>
-                <input type="radio" name="situac-laboral-b" value="">Trabajadores por cuenta propia
-
-                <br>
-                <input type="radio" name="situac-laboral-b" value="">No empleada, pero en busca de trabajo
-
-                <br>
-                <input type="radio" name="situac-laboral-b" value="">No empleada, no busca trabajo
-
-                <br>
-                <input type="radio" name="situac-laboral-b" value="">Estudiante
-
-                <br>
-                <input type="radio" name="situac-laboral-b" value="">Ama de casa
-                <br>
-            </ul>
-        </div>
- -->
-        <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="nec-capital">¿Nos detallás algo sobre las necesidades de capital que encontrás en tu
-                    emprendimiento y su prioridad? (baja necesidad, intermedia, alta)
-                </label>
-            </div>
-            <ul class="respuesta text-left col-6">
-                <input type="radio" name="nec-capital" value="herram">Herramientas, maquinaria, vehículos…
-
-                <br>
-                <input type="radio" name="nec-capital" value="materia-prim">Materia prima, proveedores idóneos…
-
-                <br>
-                <input type="radio" name="nec-capital" value="personal">Capital humano, colaboradores…
-
-                <br>
-                <input type="radio" name="nec-capital" value="publicidad">Difusión de mi actividad, promoción…
-
-                <br>
-                <input type="radio" name="nec-capital" value="capacitacion">Capacitación mía o de colaboradores…
-
-                <br>
-                <input type="radio" name="nec-capital" value="deudas">Pago de deudas…
-
-                <br>
-            </ul>
-        </div>
-
-        <!-- <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="familiaridad">Respecto de tu ACTIVIDAD ESPECÍFICA, señala tu grado de conformidad con los
-                    siguientes ítems… (muy disconforme, disconforme, conforme, muy conforme)
-                </label>
-            </div>
-            <ul class="respuesta text-left col-6">
-                <input type="radio" name="familiaridad" value="">Situación económica nacional actual
-
-                <br>
-                <input type="radio" name="familiaridad" value="">Apoyo prestado por entidades públicas (municipios,
-                entes…)
-
-                <br>
-                <input type="radio" name="familiaridad" value="">Apoyo prestado por entidades privadas (bancos,
-                asociaciones…)
-
-                <br>
-                <input type="radio" name="familiaridad" value="">Desenvolvimiento personal (tuyo) propio en el área
-
-                <br>
-                <input type="radio" name="familiaridad" value="">Perspectivas para tu ACTIVIDAD a futuro
-
-                <br>
-
-                <input type="radio" name="familiaridad" value="">Perspectivas para tu EMPRESA a futuro
-
-                <br>
-
-
-            </ul>
-        </div> -->
-
-        <!-- <div class="dupla-consigna bg-light my-3 row py-2">
-            <div class="pregunta text-right col-6">
-                <label for="familiaridad">¿Qué factor consideras más importante de tu emprendimiento para atraer un
-                    inversionista? (Seleccioná hasta dos)
-                </label>
-            </div>
-            <ul class="respuesta text-left col-6">
-                <input type="radio" name="familiaridad" value="">Originalidad del producto o servicio (o ausencia de
-                competencia)
-
-                <br>
-                <input type="radio" name="familiaridad" value="">Relación precio/calidad del producto o servicio
-
-                <br>
-                <input type="radio" name="familiaridad" value="">Ubicación del emprendimiento (relacionado con el
-                turismo)
-
-                <br>
-                <input type="radio" name="familiaridad" value="">Velocidad de crecimiento del emprendimiento
-
-                <br>
-                <input type="radio" name="familiaridad" value="">Equipo de emprendedores
-
-                <br>
-                <input type="radio" name="familiaridad" value="">Potencialidad a futuro
-                <br>
-            </ul>
-        </div> -->
-
-        <div class="dupla-consigna bg-light my-3 row py-2">
-            <p id="description" class="pregunta text-right col text-dark text-justify">Finalmente: Juntos, estamos
-                formando un ecosistema dinámico de emprendedores en nuestro Valle. ¿Qué esperarías encontrar en el
-                mismo? (Propuestas, beneficios, información, apalancamiento, colaboración, capacitación, etc.) Por
-                favor, detallanos cualquier cosa que se te ocurra, lo primero que se te venga a la mente... que siempre
-                es lo más profundo y sincero. Gracias por tu valioso tiempo. Mantengámonos conectados!</p>
-            <textarea class="col mr-2" name="" value="" cols="30" rows="10"></textarea>
-
-        </div>
-
-        <button type="submit" class="btn btn-block btn-light text-dark" id="submit">
-            Enviar Encuesta
-        </button>
-
-    </form>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
+        </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
         integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
-    </script>
+        </script>
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
-    </script>
+        </script>
 
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 

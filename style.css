@@ -5,4 +5,15 @@ body {
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  font-family: "Raleway", sans-serif;
+}
+
+#submit {
+  background-color: antiquewhite;
+  border-width: 0ch;
+}
+
+.dupla-consigna {
+  border-radius: 5px;
+  background-color: antiquewhite;
 }

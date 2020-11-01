@@ -1,6 +1,6 @@
 # freeCode Camp curriculum
 ## Responsive Web Design Certification
-### Porject 1/5: Build a Survey Form
+### Project 1/5: Build a Survey Form
 Web hosted in: https://fcc-002-survey-form.vercel.app/
 
 #### Author DiegoMMF
